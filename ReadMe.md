@@ -1,2 +1,2 @@
-# Lab Escape - Crossword Puzzle
-Game application project for subject MEP3013.
+# Pengembaraan Reka Cipta - Teka Silang Kata
+Game application project for subject KPD3016.
