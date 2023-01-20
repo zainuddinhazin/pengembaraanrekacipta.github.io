@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pengembaraan Reka Cipta - Teka Silang Kata</title>
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="src/createjs.min.js"></script>
+    <script type="text/javascript" src="src/gameData.js"></script>
+    <script type="text/javascript" src="src/game.js"></script>
+    <style type="text/css">
+      #gameContainer canvas {
+        border: #707070 solid 1px;
+        border-radius: 5px;
+        display: inline-block;
+        width: 800px;
+        height: 600px;
+        margin: 15px auto;
+      }
+
+      #licenseContainer {
+        margin-top: 15px;
+        /* width: 800px; */
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body onbeforeunload="onUnload();">
+    <div id="gameContainer">
+      <canvas width="800" height="600">
+        <h3>Your browser does not support HTML5.</h3>
+      </canvas>
+      <script type="text/javascript">
+        (function () {
+          var canvas = (function () {
+            var scripts = document.getElementsByTagName("script");
+            var targetDiv =
+              scripts[scripts.length - 1].previousElementSibling ||
+              scripts[scripts.length - 1].previousSibling;
+            return targetDiv;
+          })();
+
+          gameData.assetsPath = "src/";
+
+          if (gameData.Title) {
+            document.title = gameData.Title;
+          }
+
+          var game = new Game(canvas, gameData);
+
+          $(function () {
+            $("#gameTitleSpan").text(gameData.Title);
+          });
+        })();
+      </script>
+    </div>
+
+    <div>This game by Zainuddin Hazin for KPD3016 assignment purposes.</div>
+  </body>
+</html>

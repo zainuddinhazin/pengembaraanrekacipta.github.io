@@ -1,0 +1,76 @@
+<?xml version="1.0" standalone="no"?>
+<manifest identifier="completionExample" version="1.0" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd&#xD;&#xA;			http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd&#xD;&#xA;			http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd&#xD;&#xA;			http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd&#xD;&#xA;			http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 3rd Edition</schemaversion>
+  </metadata>
+  <organizations default="org_wisconline_185331">
+    <organization identifier="org_wisconline_185331">
+      <title>Pengembaraan Reka Cipta - Teka Silang Kata</title>
+      <item identifier="flashcardItem" identifierref="flashcardItem_resource">
+        <title>Pengembaraan Reka Cipta - Teka Silang Kata</title>
+        <imsss:sequencing>
+          <imsss:controlMode choiceExit="true" />
+          <imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true" />
+        </imsss:sequencing>
+      </item>
+      <imsss:sequencing>
+        <imsss:controlMode flow="true" />
+      </imsss:sequencing>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="flashcardItem_resource" adlcp:scormType="sco" href="index.html" type="webcontent">
+      <file href="index.html" />
+      <file href="lib/SCORM_API_wrapper.js" />
+      <file href="lib/ScormHelper.js" />
+      <file href="lib/jquery-1.11.1.min.js" />
+      <file href="lib/createjs-2015.11.26.min.js" />
+      <file href="src/createjs.min.js" />
+      <file href="src/game.js" />
+      <file href="src/test.html" />
+      <file href="src/Audio/buttonPress.mp3" />
+      <file href="src/Audio/error.mp3" />
+      <file href="src/Audio/goodTone.mp3" />
+      <file href="src/Audio/swoosh.mp3" />
+      <file href="src/img/arrowBack.png" />
+      <file href="src/img/arrowNext.png" />
+      <file href="src/img/backQuestion.png" />
+      <file href="src/img/checkMarkSpriteButton.png" />
+      <file href="src/img/closeButton.png" />
+      <file href="src/img/crosswordBackgroundTitle.png" />
+      <file href="src/img/crosswordIcon.PNG" />
+      <file href="src/img/crosswordsBG.jpg" />
+      <file href="src/img/crosswordTITLE.png" />
+      <file href="src/img/delete.png" />
+      <file href="src/img/exitYellowBtn.png" />
+      <file href="src/img/gameOverBox.png" />
+      <file href="src/img/garbageCan.png" />
+      <file href="src/img/helpButton.png" />
+      <file href="src/img/instructions_background.png" />
+      <file href="src/img/instructions_question.png" />
+      <file href="src/img/musicOff.png" />
+      <file href="src/img/musicOn.png" />
+      <file href="src/img/newQuestionBubble.png" />
+      <file href="src/img/nextQuestion.png" />
+      <file href="src/img/panButtonDown.png" />
+      <file href="src/img/panButtonLeft.png" />
+      <file href="src/img/panButtonRight.png" />
+      <file href="src/img/panButtonUp.png" />
+      <file href="src/img/playButton.png" />
+      <file href="src/img/questionBlock.png" />
+      <file href="src/img/questionBubbleBG.png" />
+      <file href="src/img/questionIcon.png" />
+      <file href="src/img/question_mark3d.png" />
+      <file href="src/img/resetSizeButton.png" />
+      <file href="src/img/restartBtn.png" />
+      <file href="src/img/reviewBtn.png" />
+      <file href="src/img/start_button.png" />
+      <file href="src/img/submit.png" />
+      <file href="src/img/submitSprite.png" />
+      <file href="src/img/title_background.jpg" />
+      <file href="src/img/zoomIn.png" />
+      <file href="src/img/zoomOut.png" />
+    </resource>
+  </resources>
+</manifest>
